@@ -140,9 +140,9 @@ stock_data = main()
 
 
 def get_stock_values(data):
-    
+
     headings = SHEET.worksheet("sales").get_all_values()[0]
-    
+
     stock_dictionary = dict(zip(headings, data))
     return stock_dictionary
 
